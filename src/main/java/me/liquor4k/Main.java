@@ -70,5 +70,22 @@ public class Main {
         } else {
             System.out.println("Вагон полностью забит");
         }
+
+        // Задача 7: Наибольшее из трех чисел
+        System.out.println("\n=== ЗАДАЧА 7 ===");
+        int one = 15;
+        int two = 25;
+        int three = 10;
+        int max;
+
+        if (one >= two && one >= three) {
+            max = one;
+        } else if (two >= one && two >= three) {
+            max = two;
+        } else {
+            max = three;
+        }
+
+        System.out.println("Наибольшее число: " + max);
     }
 }
