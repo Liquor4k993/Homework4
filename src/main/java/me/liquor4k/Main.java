@@ -59,5 +59,16 @@ public class Main {
         } else {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         }
+
+        // Задача 6: Вагон поезда
+        System.out.println("\n=== ЗАДАЧА 6 ===");
+        int passengers = 75;
+        if (passengers < 60) {
+            System.out.println("В вагоне есть сидячие места");
+        } else if (passengers < 102) {
+            System.out.println("В вагоне есть только стоячие места");
+        } else {
+            System.out.println("Вагон полностью забит");
+        }
     }
 }
