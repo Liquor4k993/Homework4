@@ -31,7 +31,7 @@ public class Main {
 
         // Задача 4: Определение учебного заведения
         System.out.println("\n=== ЗАДАЧА 4 ===");
-        int age2 = 19;
+        int age2 = 15;
         if (age2 >= 2 && age2 <= 6) {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад");
         } else if (age2 >= 7 && age2 <= 17) {
@@ -42,6 +42,22 @@ public class Main {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить на работу");
         } else {
             System.out.println("Если возраст человека равен " + age2 + ", то ему еще рано куда-либо ходить");
+        }
+
+        // Задача 5: Аттракционы
+        System.out.println("\n=== ЗАДАЧА 5 ===");
+        int childAge = 10;
+        boolean hasAdult = true;
+        if (childAge < 5) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе");
+        } else if (childAge < 14) {
+            if (hasAdult) {
+                System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+            } else {
+                System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе без сопровождения взрослого");
+            }
+        } else {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         }
     }
 }
