@@ -78,14 +78,17 @@ public class Main {
         int three = 10;
         int max;
 
-        if (one >= two && one >= three) {
+        if (one > two && one > three) {
             max = one;
-        } else if (two >= one && two >= three) {
+            System.out.println("Наибольшее число: " + max);
+        } else if (two > one && two > three) {
             max = two;
-        } else {
+            System.out.println("Наибольшее число: " + max);
+        } else if (three > one && three > two) {
             max = three;
+            System.out.println("Наибольшее число: " + max);
+        } else {
+            System.out.println("Есть равные числа, невозможно определить единственное наибольшее");
         }
-
-        System.out.println("Наибольшее число: " + max);
     }
 }
